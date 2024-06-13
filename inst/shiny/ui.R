@@ -2,7 +2,7 @@ ui <- function(request) {
   fluidPage(
     title = "POC packageApp",
     shinyjs::useShinyjs(),
-    includeCSS(file.path("..", "www", "custom.css")),
+    includeCSS(system.file("www", "custom.css", package = "packageApp")),
     h3("WELCOME!"),
     h3("TO THE WOOORLD OF TOMORROW!"),
     actionButton("click", "curious?", class = "curiosity"),
